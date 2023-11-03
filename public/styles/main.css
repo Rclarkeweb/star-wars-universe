@@ -1,0 +1,113 @@
+body {
+    background-color: #3a3a3a;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Header */
+
+header {
+    color: #e6b223;
+}
+
+/* Text */
+
+h1 {
+    margin-top: 50px;
+    font-family: 'Poller One', serif;
+    font-size: 50px;
+}
+
+.start {
+    color: rgb(230, 178, 35);
+    font-size: 20px;
+}
+
+.error {
+    font-size: 20px;
+    color: red;
+    text-align: center;
+}
+
+.data {
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(230, 178, 35);
+    padding-bottom: 14px;
+    border-bottom: 1px solid black;
+}
+
+.heading {
+    color: rgba(255, 255, 255, 0.486);
+    margin-bottom: -10px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+/* Content */
+
+#imgContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#planetGraphic {
+    height: 200px;
+    width: auto;
+    display: block;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    padding: 15px 0px;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* buttons */
+
+#home {
+    background-color: rgb(131, 131, 131);
+}
+
+.btns {
+    text-align: center;
+}
+
+input {
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(230, 178, 35);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+form {
+    display: inline;
+}
+
+
+/* Footer */
+
+footer {
+    margin: 0;
+    color: rgb(148, 148, 148);
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(148, 148, 148);
+}

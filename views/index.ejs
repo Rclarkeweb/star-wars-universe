@@ -1,0 +1,146 @@
+<%- include("partials/header.ejs") %>
+
+    <p class="error">
+        <%if (locals.error) {%>
+            <%=error%>
+                <%}%>
+    </p>
+
+    <div class="btns">
+
+        <form action="/planet" method="GET">
+            <input type="submit" id="planet" value="Planets">
+        </form>
+
+        <form action="/character" method="GET">
+            <input type="submit" id="character" value="Characters">
+        </form>
+
+        <form action="/starship" method="GET">
+            <input type="submit" id="starship" value="Starships">
+        </form>
+
+        <form action="/species" method="GET">
+            <input type="submit" id="species" value="Species">
+        </form>
+
+    </div>
+
+    <p class="start">
+        <%if (locals.content) {%>
+            <%=content%>
+                <div id="imgContainer"><img src="/imgs/planet graphic.png" id="planetGraphic" /></div>
+                <%}%>
+    </p>
+
+    <div class="container">
+
+        <%if (locals.planet_name) {%>
+            <p class="heading">Name:</p>
+            <p class="data">
+                <%=planet_name%>
+            </p>
+            <p class="heading">Climate:</p>
+            <p class="data">
+                <%=climate%>
+            </p>
+            <p class="heading">Terrain:</p>
+            <p class="data">
+                <%=terrain%>
+            </p>
+            <p class="heading">Population:</p>
+            <p class="data">
+                <%=population%>
+            </p>
+            <%}%>
+
+                <%if (locals.char_name) {%>
+                    <p class="heading">Name:</p>
+                    <p class="data">
+                        <%=char_name%>
+                    </p>
+                    <p class="heading">Gender:</p>
+                    <p class="data">
+                        <%=gender%>
+                    </p>
+                    <p class="heading">Colour:</p>
+                    <p class="data">
+                        <%=hair_color%>
+                    </p>
+                    <p class="heading">Birth Year:</p>
+                    <p class="data">
+                        <%=birth_year%>
+                    </p>
+                    <p class="heading">Homeworld:</p>
+                    <p class="data">
+                        <%=homeworld%>
+                    </p>
+                    <%}%>
+
+                        <%if (locals.starship_name) {%>
+                            <p class="heading">Name:</p>
+                            <p class="data">
+                                <%=starship_name%>
+                            </p>
+                            <p class="heading">Model:</p>
+                            <p class="data">
+                                <%=model%>
+                            </p>
+                            <p class="heading">Manufacturer:</p>
+                            <p class="data">
+                                <%=manufacturer%>
+                            </p>
+                            <p class="heading">Number of Crew:</p>
+                            <p class="data">
+                                <%=crew%>
+                            </p>
+                            <p class="heading">Number of Passengers:</p>
+                            <p class="data">
+                                <%=passengers%>
+                            </p>
+                            <p class="heading">Hyperdrive Rating:</p>
+                            <p class="data">
+                                <%=hyperdrive%>
+                            </p>
+                            <p class="heading">Cost of Starship (in galactic credits):</p>
+                            <p class="data">
+                                <%=cost%>
+                            </p>
+                            <%}%>
+
+                                <%if (locals.species_name) {%>
+                                    <p class="heading">Name:</p>
+                                    <p class="data">
+                                        <%=species_name%>
+                                    </p>
+                                    <p class="heading">Language:</p>
+                                    <p class="data">
+                                        <%=language%>
+                                    </p>
+                                    <p class="heading">Classification:</p>
+                                    <p class="data">
+                                        <%=classification%>
+                                    </p>
+                                    <p class="heading">Average Lifespan:</p>
+                                    <p class="data">
+                                        <%=average_lifespan%>
+                                    </p>
+                                    <p class="heading">Skin Colours:</p>
+                                    <p class="data">
+                                        <%=skin_colors%>
+                                    </p>
+                                    <p class="heading">Hair Colours:</p>
+                                    <p class="data">
+                                        <%=hair_colors%>
+                                    </p>
+                                    <p class="heading">Eye Colours:</p>
+                                    <p class="data">
+                                        <%=eye_colors%>
+                                    </p>
+                                    <%}%>
+
+    </div>
+
+
+
+    <%- include("partials/footer.ejs") %>
