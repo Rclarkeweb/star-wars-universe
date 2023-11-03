@@ -32,3 +32,5 @@ You can copy this project to practise using Node.js and Express.js if you wish. 
 You may fork or copy this project for your own **personal** use.
 
 # Screenshots 
+![image](https://github.com/Rclarkeweb/star-wars-universe/assets/108008511/95f66d06-3494-4411-858c-9815e98d75e2)
+![image](https://github.com/Rclarkeweb/star-wars-universe/assets/108008511/d31d7672-d346-4ec1-b56d-65c96049f0a7)
